@@ -1,12 +1,7 @@
-"use client"
-import { Button } from "@repo/ui/button";
-import { Card } from "@repo/ui/card";
-import { Select } from "@repo/ui/select";
-import { useState } from "react";
-import { TextInput } from "@repo/ui/textinput";
-import { createOnRampTransaction } from "../app/lib/actions/createOnrampTransaction";
-import { p2pTransfer } from "../app/lib/actions/p2pTransfer";
-
+import { useState } from "react"
+import { Card } from "./src/card"
+import { TextInput } from "./src/TextInput"
+import { Button } from "./src/button"
 
 export async function sendMoneyToAFriend(phone: string, amount: number) {
     if (amount < 100) {
@@ -14,7 +9,7 @@ export async function sendMoneyToAFriend(phone: string, amount: number) {
         return
     }
 
-    const resp = await p2pTransfer(phone, amount)
+    const resp = {message: "SS"}
     alert(resp.message)
 
     // if (resp.statusCode == 200) {
