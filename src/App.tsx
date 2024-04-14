@@ -1,5 +1,5 @@
 import './App.css'
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { AppbarClient } from './components/common/AppbarClient';
 import { SidebarItem } from './components/common/SidebarItem';
 import { HomeIcon, P2PTransferIcon, TransferIcon, TransactionsIcon } from './assets';
@@ -7,18 +7,21 @@ import Auth from './components/pages/auth/Auth';
 import { useState } from 'react';
 
 function App() {
+  const navigate = useNavigate()
   const isLoggedInUser = localStorage.getItem("PayTm_UserDetails") == "true";
   const [isLoggedIn, setIsLoggedIn] = useState(isLoggedInUser)
 
   function setLoggedInTrue () {
     alert("Setting Logged In True")
     localStorage.setItem("PayTm_UserDetails", "true")
+    navigate("/home")
     setIsLoggedIn(true)
   }
 
   function setLoggedInFalse () {
     alert("Setting Logged In False")
     localStorage.setItem("PayTm_UserDetails", "false")
+    navigate("/")
     setIsLoggedIn(false)
   }
 

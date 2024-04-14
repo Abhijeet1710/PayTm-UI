@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import { UserIcon } from "../../assets";
 import { Button } from "./button";
 
@@ -16,6 +17,9 @@ export const Appbar = ({
     onSignin,
     onSignout
 }: AppbarProps) => {
+
+    const navigate = useNavigate()
+
     return <div className="py-3 flex justify-between border-b px-4 border-slate-300">
         <div className="text-lg flex flex-col justify-center">
             PayTM
@@ -25,7 +29,7 @@ export const Appbar = ({
             <Button onClick={user ? onSignout : onSignin}>{user ? "Logout" : "Login"}</Button>
 
             {user &&
-                <div className="ml-4 flex flex-col md:mr-4 cursor-pointer text-[#6a51a6] " onClick={() => { }}>
+                <div className="ml-4 flex flex-col md:mr-4 cursor-pointer text-[#6a51a6] " onClick={() => { navigate("/home") }}>
                     <span className="text-gray-800 mx-auto"><UserIcon /></span>
                     <p className="text-xs -mt-1">{`${user.name}`}</p>
                 </div>
