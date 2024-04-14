@@ -9,7 +9,7 @@ export default function History () {
     console.log("All Trans : " + JSON.stringify(allTrans));
 
 
-    return <div className="w-screen">
+    return <div className="w-screen h-screen">
         <div className="pl-4 text-4xl text-[#6a51a6] pt-8 mb-8 font-bold">
             History
         </div>

@@ -77,7 +77,7 @@ export default function Home() {
 
 
     return <>
-        <div className="w-screen">
+        <div className="w-screen h-screen">
             <div className="pl-4 text-4xl text-[#6a51a6] pt-8 mb-8 font-bold">
                 {getGreeting(name)}
             </div>

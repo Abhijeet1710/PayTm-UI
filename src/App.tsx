@@ -42,7 +42,7 @@ function App() {
         isLoggedIn ?
           <div className="flex flex-col md:flex-row">
             <div className="pt-4 md:w-80 md:border-r md:border-slate-300 md:min-h-screen md:mr-4 md:pt-28">
-              <div className="flex flx-row md:flex-col widthVx overflow-x-scroll md:overflow-x-hidden md:px-4">
+              <div className="flex flx-row justify-between md:flex-col widthVx overflow-x-scroll md:overflow-x-hidden md:px-4">
                 <SidebarItem href={"/home"} icon={<HomeIcon />} title="Home" />
                 <SidebarItem href={"/wallet"} icon={<TransferIcon />} title="Wallet" />
                 <SidebarItem href={"/transfer"} icon={<P2PTransferIcon />} title="Transfer" />
