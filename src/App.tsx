@@ -4,14 +4,36 @@ import { AppbarClient } from './components/common/AppbarClient';
 import { SidebarItem } from './components/common/SidebarItem';
 import { HomeIcon, P2PTransferIcon, TransferIcon, TransactionsIcon } from './assets';
 import Auth from './components/pages/auth/Auth';
+import { useState } from 'react';
 
 function App() {
+  const isLoggedInUser = localStorage.getItem("PayTm_UserDetails") == "true";
+  const [isLoggedIn, setIsLoggedIn] = useState(isLoggedInUser)
 
-  const isLoggedIn = true;
+  function setLoggedInTrue () {
+    alert("Setting Logged In True")
+    localStorage.setItem("PayTm_UserDetails", "true")
+    setIsLoggedIn(true)
+  }
+
+  function setLoggedInFalse () {
+    alert("Setting Logged In False")
+    localStorage.setItem("PayTm_UserDetails", "false")
+    setIsLoggedIn(false)
+  }
+
+  const session = isLoggedIn ? {
+    data: {
+      user: {
+        name: "Abhijeet",
+        email: "7558348607"
+      }
+    }
+  } : {}
 
   return (
     <div className="mainBg">
-      <AppbarClient />
+      <AppbarClient session={session} onSignout={setLoggedInFalse} />
 
       {
         isLoggedIn ?
@@ -29,7 +51,7 @@ function App() {
           </div> :
 
           // TODO : Auth Component here
-          <Auth />
+          <Auth onSignin={setLoggedInTrue}/>
       }
 
     </div>

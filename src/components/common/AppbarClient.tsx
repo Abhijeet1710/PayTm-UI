@@ -1,10 +1,9 @@
 import { Appbar } from "./Appbar";
 
-export function AppbarClient() {
-  const session: any = {data: {user: ""}}
+export function AppbarClient(props: any) {
   return (
    <div>
-      <Appbar onSignin={async () => {}} onSignout={async () => {}} user={session.data?.user} />
+      <Appbar onSignin={async () => {}} onSignout={props.onSignout} user={props.session?.data?.user} />
    </div>
   );
 }
