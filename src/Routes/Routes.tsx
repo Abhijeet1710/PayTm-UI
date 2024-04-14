@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../components/pages/dashboard/Home";
+import Home from "../components/pages/home/Home";
 import App from "../App";
 import Transfer from "../components/pages/transfer/Transfer";
 import Wallet from "../components/pages/wallet/Wallet";

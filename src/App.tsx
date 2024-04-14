@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { AppbarClient } from './components/common/AppbarClient';
 import { SidebarItem } from './components/common/SidebarItem';
 import { HomeIcon, P2PTransferIcon, TransferIcon, TransactionsIcon } from './assets';
+import Auth from './components/pages/auth/Auth';
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
           </div> :
 
           // TODO : Auth Component here
-          <h1>Pls Login First</h1>
+          <Auth />
       }
 
     </div>
