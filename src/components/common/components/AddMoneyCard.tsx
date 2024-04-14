@@ -14,7 +14,7 @@ const SUPPORTED_BANKS = [{
 }];
 
 
-export async function creditMoneyIntoWallet(provider: string, amount: number, redirectUrl: string | undefined) {
+export async function creditMoneyIntoWallet(_provider: string, amount: number, redirectUrl: string | undefined) {
     if (amount < 1000) {
         alert("Amount to credit into the wallet should be minimum 1000 INR.")
         return

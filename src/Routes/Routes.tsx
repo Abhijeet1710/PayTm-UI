@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/dashboard/Home";
 import App from "../App";
 import Transfer from "../components/transfer/Transfer";

@@ -1,3 +1,5 @@
+import { BalanceCard } from "../common/components/BalanceCard";
+import { TransactionsCard } from "../common/components/TransactionsCard";
 
 export default function Transfer () {
     const balance = {locked: 10, amount: 1000}
@@ -13,10 +15,10 @@ export default function Transfer () {
                 {/* <SendMoney /> */}
             </div>
             <div>
-                {/* <BalanceCard amount={balance.amount} locked={balance.locked} />
+                <BalanceCard amount={balance.amount} locked={balance.locked} />
                 <div className="pt-4">
                     <TransactionsCard transactions={p2pTransactions} title="Personal Transactions"/>
-                </div> */}
+                </div>
             </div>
         </div>
     </div>

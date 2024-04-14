@@ -3,7 +3,7 @@ import { Card } from "./src/card"
 import { TextInput } from "./src/TextInput"
 import { Button } from "./src/button"
 
-export async function sendMoneyToAFriend(phone: string, amount: number) {
+export async function sendMoneyToAFriend(_phone: string, amount: number) {
     if (amount < 100) {
         alert("Amount to send to a friend should be minimum 100 INR.")
         return

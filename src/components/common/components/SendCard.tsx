@@ -5,8 +5,8 @@ import { TextInput } from "./src/TextInput";
 import { Button } from "./src/button";
 
 export function SendCard() {
-    const [number, setNumber] = useState("");
-    const [amount, setAmount] = useState("");
+    const [_number, setNumber] = useState("");
+    const [_amount, setAmount] = useState("");
 
     return <div className="h-[90vh]">
         <Center>
