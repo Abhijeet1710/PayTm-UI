@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../components/dashboard/Home";
+import Home from "../components/pages/dashboard/Home";
 import App from "../App";
-import Transfer from "../components/transfer/Transfer";
-import Wallet from "../components/wallet/Wallet";
-import History from "../components/history/History";
+import Transfer from "../components/pages/transfer/Transfer";
+import Wallet from "../components/pages/wallet/Wallet";
+import History from "../components/pages/history/History";
 
 export const router = createBrowserRouter([
     {

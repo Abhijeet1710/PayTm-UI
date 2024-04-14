@@ -1,6 +1,6 @@
-import { AddMoney } from "../common/components/AddMoneyCard";
-import { BalanceCard } from "../common/components/BalanceCard";
-import { TransactionsCard } from "../common/components/TransactionsCard";
+import { AddMoney } from "../../common/AddMoneyCard";
+import { BalanceCard } from "../../common/BalanceCard";
+import { TransactionsCard } from "../../common/TransactionsCard";
 
 export default function Wallet () {
     const balance = {amount: 2000, locked: 100};

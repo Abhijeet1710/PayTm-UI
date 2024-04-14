@@ -1,7 +1,7 @@
 import './App.css'
 import { Outlet } from "react-router-dom";
-import { AppbarClient } from './components/common/components/AppbarClient';
-import { SidebarItem } from './components/common/components/SidebarItem';
+import { AppbarClient } from './components/common/AppbarClient';
+import { SidebarItem } from './components/common/SidebarItem';
 import { HomeIcon, P2PTransferIcon, TransferIcon, TransactionsIcon } from './assets';
 
 function App() {

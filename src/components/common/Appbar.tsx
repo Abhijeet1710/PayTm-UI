@@ -1,4 +1,4 @@
-import { UserIcon } from "./assets/icons";
+import { UserIcon } from "../../assets";
 import { Button } from "./button";
 
 interface AppbarProps {

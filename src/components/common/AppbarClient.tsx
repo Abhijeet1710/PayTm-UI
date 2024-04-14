@@ -1,4 +1,4 @@
-import { Appbar } from "./src/Appbar";
+import { Appbar } from "./Appbar";
 
 export function AppbarClient() {
   const session: any = {data: {user: ""}}

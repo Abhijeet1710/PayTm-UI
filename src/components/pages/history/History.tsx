@@ -1,4 +1,4 @@
-import { TransactionsCard } from "../common/components/TransactionsCard";
+import { TransactionsCard } from "../../common/TransactionsCard";
 
 export default function History () {
     const p2pTrans: any = []

@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Card } from "./src/card"
-import { TextInput } from "./src/TextInput"
-import { Button } from "./src/button"
+import { Card } from "./card"
+import { TextInput } from "./TextInput"
+import { Button } from "./button"
 
 export async function sendMoneyToAFriend(_phone: string, amount: number) {
     if (amount < 100) {

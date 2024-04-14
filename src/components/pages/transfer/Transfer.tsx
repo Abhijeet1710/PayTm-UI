@@ -1,6 +1,6 @@
-import { BalanceCard } from "../common/components/BalanceCard";
-import { SendMoney } from "../common/components/SendMoneyCard";
-import { TransactionsCard } from "../common/components/TransactionsCard";
+import { BalanceCard } from "../../common/BalanceCard";
+import { SendMoney } from "../../common/SendMoneyCard";
+import { TransactionsCard } from "../../common/TransactionsCard";
 
 export default function Transfer () {
     const balance = {locked: 10, amount: 1000}

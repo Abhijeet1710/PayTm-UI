@@ -1,4 +1,4 @@
-import { Card } from "./src/card";
+import { Card } from "./card";
 
 export const BalanceCard = ({amount, locked}: {
     amount: number;

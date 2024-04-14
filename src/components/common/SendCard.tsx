@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Center } from "./src/Center";
-import { Card } from "./src/card";
-import { TextInput } from "./src/TextInput";
-import { Button } from "./src/button";
+import { Center } from "./Center";
+import { Card } from "./card";
+import { TextInput } from "./TextInput";
+import { Button } from "./button";
 
 export function SendCard() {
     const [_number, setNumber] = useState("");

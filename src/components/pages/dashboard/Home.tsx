@@ -65,8 +65,8 @@ function convertAmountToWords(amount: number) {
     return `${result.trim()} Rs. Only`;
 }
 
-
-export default function Home() : any {
+export default function Home() {
+    // const balanceFetched = getBalance()
     const name = "Abhijeet"
     const id = 1
     const email = "7558348607"

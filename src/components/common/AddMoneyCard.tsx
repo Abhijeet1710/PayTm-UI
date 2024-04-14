@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Card } from "./src/card";
-import { TextInput } from "./src/TextInput";
-import { Select } from "./src/Select";
-import { Button } from "./src/button";
+import { Card } from "./card";
+import { TextInput } from "./TextInput";
+import { Select } from "./Select";
+import { Button } from "./button";
 
 
 const SUPPORTED_BANKS = [{

@@ -1,5 +1,5 @@
-import { AmtCreditedIcon, AmtDebitedIcon } from "../../../assets"
-import { Card } from "./src/card"
+import { AmtCreditedIcon, AmtDebitedIcon } from "../../assets"
+import { Card } from "./card"
 
 
 
