@@ -1,4 +1,5 @@
 import { BalanceCard } from "../common/components/BalanceCard";
+import { SendMoney } from "../common/components/SendMoneyCard";
 import { TransactionsCard } from "../common/components/TransactionsCard";
 
 export default function Transfer () {
@@ -12,7 +13,7 @@ export default function Transfer () {
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 p-4">
             <div>
-                {/* <SendMoney /> */}
+                <SendMoney />
             </div>
             <div>
                 <BalanceCard amount={balance.amount} locked={balance.locked} />
